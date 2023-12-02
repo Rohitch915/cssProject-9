@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.4rem;
+ 
+}
+header{
+    position: sticky;
+    top:0px;
+    z-index: 10;
+}
+.nav-container{
+    display:flex;
+   
+    list-style-type: none;
+    background-color: white;
+    margin: 0px 175px;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    font-size: 18px;
+}
+.bold{
+    font-weight: bold;
+}
+.nav-right{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width:260px;
+}
+
+.nav-right li a{
+    color: black;
+    text-decoration: none;
+}
+.fa{
+    font-size: 2.5rem;
+}
+.fa-linkedin{
+    background-color: black;
+    color: white;
+   font-size: 18px;
+   padding: 3px;
+    font-family: "Font Awesome 5 Brands";
+}
+.main{
+   
+    margin:0px 175px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first h1{
+    font-size: 6rem;
+}
+.first p{
+    font-size: 2.5rem;
+}
+.first img{
+    border-radius: 40px;
+}
+.second{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem;
+    
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.second-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7px;
+}
+.second-info h2,.second-info .second-info-p1,.second-info div{
+  margin: 6px;
+}
+.date a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.date a:hover{
+    text-decoration: underline;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+}
+.third{
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third .card{
+    display: flex;
+    flex-direction: column;
+  
+    max-width: 299px;
+  box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.third-info{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    padding: 15px;
+}
+footer{
+    width:100%;
+    padding: 10px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+   margin: 0px 175px;
+}
+.footer-container ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    list-style-type: none;
+}
+
+@media screen and (max-width:1330px)
+{
+    .nav-container{
+        margin: 0px 50px;
+    }
+    .main{
+        margin: 0px 50px;
+    }
+    .footer-container{
+        margin:0px 50px;
+    }
+}
+
+@media screen and (max-width:1090px)
+{
+    .third{
+       
+        justify-content: center;
+       
+        flex-wrap: wrap;
+        row-gap: 25px;
+        column-gap: 30px;
+    }
+    .first h1{
+        font-size: 3rem;
+    }
+    .first p{
+        font-size: 1.5rem;
+    }
+    .first img{
+       width:350px;
+       height: auto;
+    }
+   .second{
+    flex-wrap: wrap-reverse;
+   }
+   
+   .second-img-div{
+    width:100%;
+   }
+  .second-img{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:800px)
+{
+    .first{
+        flex-direction: column-reverse;
+    }
+    .first img{
+        width:auto;
+        margin-bottom: 20px;
+    }
+    .first h1{
+        font-size: 3rem;
+    }
+    .first p{
+        font-size: 15px;
+    }
+    .third .card{
+      
+        max-width: 400px;
+   
+    }
+    .img-div{
+        width:100%;
+    }
+    .img-100{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    .nav-container{
+       
+       
+        justify-content: flex-start;
+       
+        font-size: 15px;
+    }
+    .nav-right{
+       
+        align-items: center;
+        width:250px;
+    }
+
+    .first img{
+        width:250px;
+        margin-bottom: 20px;
+    }
+    .first h1{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .first p{
+        font-size: 15px;
+    }
+    .footer-container{
+      
+        align-items: center;
+        flex-direction: column;
+        gap:20px;
+    }
+    .nav-container{
+        margin: 0px 10px;
+    }
+    .main{
+        margin: 0px 10px;
+    }
+    .footer-container{
+        margin:0px 10px;
+    }
+}
